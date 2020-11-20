@@ -8,8 +8,8 @@
             <div class="row">
               <!-- Form-Input correspiente a la carga de tareas. El formulario se envia al presionar la tecla Enter -->
               <form @submit.prevent="setTareas(tarea)">
-                <div class="input-group input-group-lg">
-                  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Que necesita recordar?" v-model="tarea" @keydown.enter="submit" @keyup.enter="clearInput()" autofocus="autofocus" style="width:400px;">
+                <div class="col-12 input-group input-group-lg">
+                  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" placeholder="Que necesita recordar?" v-model="tarea" @keydown.enter="submit" @keyup.enter="clearInput()" autofocus="autofocus" style="width:300px;">
                 </div>
               </form>
             </div>
@@ -26,19 +26,19 @@
 
                 <!-- Muestra aquellas tareas que NO estan terminadas -->
                 <div class="row" v-if="tarea.activo">
-                  <div class="col-1"><input type="checkbox" @click="editTarea({id: tarea._id, input: false})"></div>
-                  <div class="col-10">
+                  <div class="col-lg-1 col-12"><input type="checkbox" @click="editTarea({id: tarea._id, input: false})"></div>
+                  <div class="col-lg-10 col-12">
                     <label :id="index" v-show="modTarea != [index]" @dblclick = editarTarea(index) style="word-break: break-all;">{{tarea.texto}}</label>
                     <input type="text" class="form-control" v-show="modTarea == [index]"  v-model="tarea.texto" @keydown.enter="editTarea({id: tarea._id, input: tarea.texto})" @keyup.enter="editarTarea(index)">
                   </div>
-                  <div class="col-1"><button type="button" class="btn btn-outline-danger" @click="removeTareaIncompleta(tarea._id)" style="border-radius: 25px;border: none;">X</button></div>
+                  <div class="col-lg-1 col-12"><button type="button" class="btn btn-outline-danger" @click="removeTareaIncompleta(tarea._id)" style="border-radius: 25px;border: none;">X</button></div>
                 </div>
 
                 <!-- Muestra aquellas tareas que estan terminadas -->
                 <div class="row" v-else>
-                  <div class="col-1"><input type="checkbox" @click="editTarea({id: tarea._id, input: true})" checked></div>
-                  <div class="col-10"><label :id="index" v-show="modTarea != [index]" style="word-break: break-all;"><del>{{tarea.texto}}</del></label></div>
-                  <div class="col-1"><button type="button" class="btn btn-outline-danger" @click="removeTarea(tarea._id)" style="border-radius: 25px;border: none;">X</button></div>
+                  <div class="col-lg-1 col-12"><input type="checkbox" @click="editTarea({id: tarea._id, input: true})" checked></div>
+                  <div class="col-lg-10 col-12"><label :id="index" v-show="modTarea != [index]" style="word-break: break-all;"><del>{{tarea.texto}}</del></label></div>
+                  <div class="col-lg-1 col-12"><button type="button" class="btn btn-outline-danger" @click="removeTarea(tarea._id)" style="border-radius: 25px;border: none;">X</button></div>
                 </div>
               </li>
             </ul>
@@ -51,14 +51,14 @@
         <div class="container d-flex mt-2 justify-content-center">
           <div class="d-flex">
               <div class="row">
-                <div class="col-6 d-flex justify-content-start">
+                <div class="col-lg-6 col-12 d-flex justify-content-lg-start justify-content-center">
                   <div class="btn-group" role="group">
                     <button type="button" class="btn btn-secondary" @click="setFiltro(0)">Todos</button>
                     <button type="button" class="btn btn-secondary" @click="setFiltro(1)">Pendientes</button>
                     <button type="button" class="btn btn-secondary" @click="setFiltro(2)">Completados</button>
                   </div>
                 </div>
-                <div class="col-6 d-flex justify-content-end">
+                <div class="col-lg-6 col-12 d-flex justify-content-lg-end justify-content-center mt-lg-0 mt-2">
                   <button type="button" class="btn btn-danger" @click="borrarCompletos()">Limpiar completados</button>
                 </div>
             </div>
