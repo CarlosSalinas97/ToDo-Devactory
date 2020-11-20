@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
-    <router-link to="/">To Do</router-link>|
-    <router-link to="/about">Guía de uso</router-link>
+    <router-link to="/">To Do List</router-link> |
+    <router-link to="/guia">Guía de uso</router-link>
   </div>
   <router-view/>
 </template>
@@ -34,6 +34,7 @@ export default {
 #nav a {
   font-weight: bold;
   color: #2c3e50;
+  text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
