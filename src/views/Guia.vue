@@ -1,11 +1,9 @@
 <template>
   <div class="container">
     <h1>Guía de uso</h1>
-  </div>
-  <div class="container">
     <p>Bienvenido, este es un breve instructivo de como funciona la aplicación</p>
     <div class="row ">
-      <ul class="text-left mt-2">
+      <ul class="text-justify mt-2" style="width:95%;">
         <li>Las tareas se agregan mediante el campo principal. Al presionar Enter la tarea se agregará al listado.</li>
         <li>Cada tarea tiene a su izquierda la opcíon de marcar la tarea como 'Completada'.</li>
         <li>Cuando una tarea se marca como completada, la misma aparecerá como tachada.</li>

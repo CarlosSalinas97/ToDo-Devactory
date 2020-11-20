@@ -21,7 +21,7 @@
         <div class="container d-flex flex-column">
           <div class="d-flex flex-column align-items-center justify-content-center">
             <!-- Mostrar tareas -->
-            <ul class="list-group list-group-flush border border-dark rounded mt-2" style="width: 50%;">
+            <ul class="list-group list-group-flush border border-dark rounded mt-2" style="width: 60%;">
               <li class="list-group-item" v-for="(tarea, index) in mapeoFiltrado">
 
                 <!-- Muestra aquellas tareas que NO estan terminadas -->
