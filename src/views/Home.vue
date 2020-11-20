@@ -18,12 +18,12 @@
               <input type="checkbox" @click="editTarea({id: tarea._id, input: false})">
               <label :id="index" v-show="modTarea != [index]" @dblclick = editarTarea(index)>{{tarea.texto}}</label>
               <input type="text" v-show="modTarea == [index]"  v-model="tarea.texto" @keydown.enter="editTarea({id: tarea._id, input: tarea.texto})" @keyup.enter="editarTarea(index)">
-              <button @click="removeTarea({id: tarea._id})">X</button>
+              <button @click="removeTarea(tarea._id)">X</button>
             </div>
             <div v-else>
               <input type="checkbox" @click="editTarea({id: tarea._id, input: true})" checked>
-              <label :id="index" v-show="modTarea != [index]" @dblclick = editarTarea(index)>{{tarea.texto}}</label>
-              <button @click="removeTarea({id: tarea._id})">X</button>
+              <label :id="index" v-show="modTarea != [index]" @dblclick = editarTarea(index)><strike>{{tarea.texto}}</strike></label>
+              <button @click="removeTarea(tarea._id)">X</button>
             </div>
           </li>
 
