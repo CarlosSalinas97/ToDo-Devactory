@@ -77,8 +77,9 @@ _Las herramientas utilizadas para realizar el proyecto fueron:_
 ---
 
 # Instalacion 🔧
-_La aplicación esta construida sobre [Vue CLI](https://cli.vuejs.org/) v4.5.9, por lo que será necesario tenerlo instalado_
+_La aplicación esta construida sobre [Vue CLI](https://cli.vuejs.org/) v4.5.9, por lo que será necesario tenerlo instalado._
 _Para instalarlo, primero es necesario tener [Node.js](https://nodejs.org/es/) previamente instalarlo._
+
 _Para instalar Vue CLI, procedemos a ejecutar el siguiente comando: [Guía de instalacion VUE Cli](https://cli.vuejs.org/guide/installation.html)_
 ```
   npm install -g @vue/cli
