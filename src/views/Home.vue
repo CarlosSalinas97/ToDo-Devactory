@@ -81,7 +81,7 @@
 </template>
 
 <script>
-import {mapActions, mapState} from 'vuex'
+import {mapActions, mapGetters, mapMutations, mapState} from 'vuex'
 import axios from 'axios'
 
 export default {
@@ -93,7 +93,7 @@ export default {
     }
   },
   computed:{
-    //Mapea de los estados definidos en el Store de Vuex
+    //Mapeo de los estados y getters definidos en el Store de Vuex
     ...mapState(['tareas']),
 
     //Mapeo filtrado de acuerdo al estado(activo: true/false) de las tareas.
@@ -115,7 +115,7 @@ export default {
     this.getTarea
   },
   methods:{
-    //Mapeo de las acciones definidas en el Store de Vuex
+    //Mapeo de las acciones y mutaciones definidas en el Store de Vuex
     ...mapActions(['setTareas','getTareas','removeTarea', 'editTarea']),
 
     //Limpia el input al presionar enter.

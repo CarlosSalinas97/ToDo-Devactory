@@ -6,12 +6,12 @@ export default createStore({
     tareas:[],
   },
   mutations: {
-    setTareas(state, payload ){
-      state.tareas = payload
+    setTareas(state, tarea){
+      state.tareas = tarea
     },
-    getTareas(state, payload){
-      state.tareas = payload
-    }
+    getTareas(state, tarea){
+      state.tareas = tarea
+    },
   },
   actions: {
     //Funcion correspondiente a traer todos las tareas almacenadas en la API. Se lanza al cargar la página.
@@ -71,5 +71,5 @@ export default createStore({
         })
       }
     }
-  }
+  },
 })
