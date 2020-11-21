@@ -7,9 +7,9 @@
         <li>Las tareas se agregan mediante el campo principal. Al presionar Enter la tarea se agregará al listado.</li>
         <li>Cada tarea tiene la opcíon de marcarla como 'Completada'.</li>
         <li>Cuando una tarea se marca como completada, la misma aparecerá tachada.</li>
-        <li>Para editar una tarea, haga doble click sobre la que desee editar. Una vez que termine de editar, presione Enter para guardar los cambios.</li>
-        <li>Para eliminar una tarea, haga click sobre el icono 'X'. En el caso de que la tarea no esté completa, se le solicitará una confirmación para poder eliminarla.</li>
-        <li>Mediante los botones en la parte inferior puede filtrar que tipo de tareas quiere ver.</li>
+        <li>Para editar una tarea, haga doble click sobre la misma. Una vez que termine de editar, presione Enter para guardar los cambios.</li>
+        <li>Para eliminar una tarea, haga click sobre el icono 'X'. En el caso de que la tarea aún no esté completa, se le solicitará una confirmación para poder eliminarla.</li>
+        <li>Mediante los botones en la parte inferior puede filtrar que tipo de tareas quiere ver (Todas, Pendientes, Completadas).</li>
         <li>Puede eliminar todas las tareas completas mediante el botón "Limpiar completados".</li>
       </ul>
     </div>
