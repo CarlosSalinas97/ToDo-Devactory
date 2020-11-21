@@ -10,9 +10,9 @@ _El ejercicio consiste en desarrollar una aplicación simple de gestión de tare
 
 ## Descripción de la aplicación
 
-_El usuario podrá crear una lista de tareas, marcarlas como finalizadas, borrarlas y filtrarlas por estado de las tareas (Todas, Pendientes, Completadas). La página cuenta con una guía de uso para aquellos nuevos usuarios._
+_El usuario podrá crear una lista de tareas, marcarlas como finalizadas, borrarlas y filtrarlas por estado de las tareas (Todas, Pendientes, Completadas). La página cuenta con una guía de uso para nuevos usuarios._
 _Las tareas tienen persistencia dentro de una base de datos en la nube para asegurar al usuario la disponibilidad de ellas en todo momento, desde cualquier dispositivo._
-_La página posee diseño responsivo, por lo que se puede acceder a ella mediante cualquier dispositivo con acceso a Internet._
+_La página posee un diseño responsivo, por lo que se puede acceder a ella mediante cualquier dispositivo con acceso a Internet._
 
 ---
 
@@ -29,7 +29,7 @@ _La página posee diseño responsivo, por lo que se puede acceder a ella mediant
 
 ## Endpoints
 ### [GET] /api/todo
-_Trae al usuario, la lista de todas las tareas._
+_Trae al usuario la lista de todas las tareas._
 ```
   https://todo-api-devactory.herokuapp.com/api/todo
 ```
@@ -78,9 +78,9 @@ _Las herramientas utilizadas para realizar el proyecto fueron:_
 
 # Instalacion 🔧
 _La aplicación esta construida sobre [Vue CLI](https://cli.vuejs.org/) v4.5.9, por lo que será necesario tenerlo instalado._
-_Para instalarlo, primero es necesario tener [Node.js](https://nodejs.org/es/) previamente instalarlo._
+_Para instalarlo, primero es necesario tener [Node.js](https://nodejs.org/es/) previamente instalado._
 
-_Para instalar Vue CLI, procedemos a ejecutar el siguiente comando: [Guía de instalacion VUE Cli](https://cli.vuejs.org/guide/installation.html)_
+_Para instalar Vue CLI, procedemos a ejecutar el siguiente comando: [Guía de instalación Vue Cli](https://cli.vuejs.org/guide/installation.html)_
 ```
   npm install -g @vue/cli
 ```
@@ -97,7 +97,7 @@ _Para compilar y ejecutar, se deberá abrir la terminal en la dirección del pro
   npm run serve
 ```
 
-_La pagina se ejecutara en: http://127.0.0.1:8080/_
+_La pagina se ejecutará en: http://127.0.0.1:8080/_
 
 ---
     
